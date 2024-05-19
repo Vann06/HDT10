@@ -9,7 +9,7 @@ Clase encargada de gestionar las matrices de las ciudades
  */
 public class GestorMatricesCiudades {
 
-    private Vector<String> ciudades;
+    protected Vector<String> ciudades;
     private int[][] distancia;
     private int[][] rutas;
 
@@ -108,6 +108,35 @@ public class GestorMatricesCiudades {
 
     public boolean contains(String city1) {
         return ciudades.contains(city1);
+    }
+
+    public void eliminarArco(String ciudadA, String ciudadB) {
+        if (!contains(ciudadA) || !contains(ciudadB)) {
+            System.out.println("Una o ambas ciudades no existen en el grafo.");
+            return;
+        }
+
+        int i = ciudades.indexOf(ciudadA);
+        int j = ciudades.indexOf(ciudadB);
+
+        distancia[i][j] = 999999;
+        rutas[i][j] = 999999;
+    }
+
+    public void agregarArco(String ciudadA, String ciudadB, int dist) {
+        // Verificar si las ciudades existen en el grafo
+        if (!contains(ciudadA) || !contains(ciudadB)) {
+            System.out.println("Una o ambas ciudades no existen en el grafo.");
+            return;
+        }
+
+        // Obtener los índices de las ciudades en el vector
+        int i = ciudades.indexOf(ciudadA);
+        int j = ciudades.indexOf(ciudadB);
+
+        // Actualizar la matriz de distancias y la matriz de rutas
+        distancia[i][j] = dist;
+        rutas[i][j] = j; // Se asume que la ruta directa va a la ciudad B
     }
 
     /*

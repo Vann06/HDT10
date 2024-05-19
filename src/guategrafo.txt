@@ -6,7 +6,7 @@ Guatemala Mixco 10
 Guatemala Antigua 35
 Escuintla Guatemala 65
 Mixco Villa-Nueva 25
-Villa-Nueva Amatitlán 15
-Amatitlán Escuintla 55
+Villa-Nueva Amatitlan 15
+Amatitlan Escuintla 55
 Antigua Chimaltenango 40
 Chimaltenango Escuintla 50
