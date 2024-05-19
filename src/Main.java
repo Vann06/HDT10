@@ -22,7 +22,8 @@ public class Main {
             System.out.println("3. Encontrar camino más corto entre ciudades");
             System.out.println("4. Agregar arco entre ciudades");
             System.out.println("5. Quitar arco entre ciudades");
-            System.out.println("6. Salir");
+            System.out.println("6. Encontrar centro del grafo");
+            System.out.println("7. Salir");
 
             int opcion = 0;
             boolean validInput = false;
@@ -96,7 +97,10 @@ public class Main {
                     }
                     break;
                 case 6:
-                    // Salir del programa
+                    String centroGrafo = gestor.calcularCentroGrafo();
+                    System.out.println("El centro del grafo es: " + centroGrafo);
+                    break;
+                case 7:
                     salir = true;
                     System.out.println("¡Hasta luego!");
                     break;
