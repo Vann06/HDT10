@@ -139,6 +139,28 @@ public class GestorMatricesCiudades {
         rutas[i][j] = j; // Se asume que la ruta directa va a la ciudad B
     }
 
+
+    public String calcularCentroGrafo() {
+        int minMax = Integer.MAX_VALUE;
+        int centro = -1;
+
+        for (int i = 0; i < ciudades.size(); i++) {
+            int maxDistancia = Integer.MIN_VALUE;
+
+            for (int j = 0; j < ciudades.size(); j++) {
+                if (distancia[i][j] > maxDistancia) {
+                    maxDistancia = distancia[i][j];
+                }
+            }
+
+            if (maxDistancia < minMax) {
+                minMax = maxDistancia;
+                centro = i;
+            }
+        }
+
+        return ciudades.get(centro);
+    }
     /*
     public boolean contains(String city1, String city2) {
         return ciudades.contains(city1) && ciudades.contains(city2);
