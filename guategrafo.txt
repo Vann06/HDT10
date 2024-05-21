@@ -1,12 +1,3 @@
-Mixco Antigua 45
-Antigua Escuintla 30
-Escuintla Santa-Lucia 20
-Santa-Lucia Guatemala 85
-Guatemala Mixco 10
-Guatemala Antigua 35
-Escuintla Guatemala 65
-Mixco Villa-Nueva 25
-Villa-Nueva Amatitlan 15
-Amatitlan Escuintla 55
-Antigua Chimaltenango 40
-Chimaltenango Escuintla 50
+Mixco Antigua 30
+Antigua Escuintla 25
+Escuintla SantaLucia 15
